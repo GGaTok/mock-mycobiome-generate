@@ -114,7 +114,7 @@ python 4_generate_reads_v4.py \
 
 Sample_1~n_Composition.txt
 
-Sample_1~n_Mock_sampled_ITS1~12_trimmed_1~2.fastq  
+Sample_1 ~ n_Mock_sampled_ITS1 ~ 12_trimmed_1 ~ 2.fastq  
 
 다음과 같은 파일들이 생성된다.
 
@@ -134,6 +134,6 @@ python 5_merge_ver2.py .
 
 코드가 정상적으로 작동하면 
 
-Sample_1~n_Mock_sampled_ITS1~12_trimmed_assembled.fastq
+Sample_1 ~ n_Mock_sampled_ITS1 ~ 12_trimmed_assembled.fastq
 
 가 생성된다.  이렇게 완성된 mock community를 분석에 사용하면 된다.
