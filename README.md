@@ -22,8 +22,9 @@
 bash 1_reference_genome_down.sh <forward sequence.fasta> <reverse sequence.fasta>
 ```
 
-### preteatment_list.txt 예시
 
+|preteatment_list.txt 예시|
+|---|
 | **Candida albicans**             |
 | **Candida parapsilosis**         |
 | **Candida tropicalis**           |
@@ -61,7 +62,7 @@ python 2_random_sampling.py Mock.fasta <sampling 하고자 하는 종의 수>
 
 Primer_set.fasta안에 trimming을 진행하고자 하는 서열 2개를 fasta 형식으로 file을 만들면 된다.
 
-추가적으로 --max-mm num 인자를 이용하면 mismatch의 개수를 정할 수 있다.
+추가적으로 '--max-mm num' 인자를 이용하면 mismatch의 개수를 정할 수 있다.
 
 ```bash
 python 3_trimming_ver2.py Mock_sampled.fasta <Primer_set.fasta>
@@ -101,13 +102,13 @@ python 4_generate_reads_v4.py \
   -c 4 
 ```
 
--n : 만들 sample 수 
+'-n' : 만들 sample 수 
 
--r :  fastq 파일의 read 수 
+'-r' :  fastq 파일의 read 수 
 
--l : 앞에서 또는 뒤에서 몇 bp인지
+'-l' : 앞에서 또는 뒤에서 몇 bp인지
 
--c : 코어수
+'-c' : 코어수
 
 코드가 정상적으로 작동하면
 
