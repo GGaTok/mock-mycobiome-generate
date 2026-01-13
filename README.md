@@ -6,7 +6,7 @@
 
 ## 0. 개요
 
-코드는 크게 Genome down ~ merge 까지 5단계로 나눠져 있으며 각각의 Step에서 코드를 어떻게 사용하는 지 확인하며, 원리 ~ 과정에 대해 서술함.
+코드는 크게 Genome down ~ merge 까지 5단계로 나눠져 있으며 각각의 Step에서 코드를 어떻게 사용하는 지 확인하며, 원리 ~ 과정에 대해 정리.
 
 
 
@@ -25,7 +25,6 @@ bash 1_reference_genome_down.sh <forward sequence.fasta> <reverse sequence.fasta
 ### preteatment_list.txt 예시
 
 | **Candida albicans**             |
-| -------------------------------- |
 | **Candida parapsilosis**         |
 | **Candida tropicalis**           |
 | **Candida kefyr**                |
