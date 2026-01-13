@@ -2,13 +2,11 @@
 
 분석하고자 하는 genome에서 특이적인 공통서열의 resolution을 확인하기 위해 In silico 에서 인위적인 fastq( Miseq sequencing 결과와 유사한) data를 만드는  pipeline
 
-[TOC]
-
 
 
 ## 0. 개요
 
-코드는 크게 Genome down ~ merge 까지 5단계로 나눠져 있으며 각각의 Step에서 코드를 어떻게 사용하는 지 확인하며, 원리 ~ 과정에 대해 자세히 서술도록 하겠다.
+코드는 크게 Genome down ~ merge 까지 5단계로 나눠져 있으며 각각의 Step에서 코드를 어떻게 사용하는 지 확인하며, 원리 ~ 과정에 대해 서술함.
 
 
 
