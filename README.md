@@ -1,6 +1,6 @@
 # Mock mycobiome Analysis Pipeline (260113)
 
-분석하고자 하는 genome에서 특이적인 공통서열의 resolution을 확인하기 위해 In silico 에서 인위적인 fastq( Miseq sequencing 결과와 유사한) data를 만드는  pipeline
+분석하고자 하는 genome에서 종 특이적이고 공통서열에 대한 resolution을 확인하기 위해 In silico 에서 인위적인 fastq( Miseq sequencing 결과와 유사한) data를 만드는  pipeline
 
 
 
@@ -62,8 +62,8 @@ python 2_random_sampling.py Mock.fasta <sampling 하고자 하는 종의 수>
 
 Primer_set.fasta안에 trimming을 진행하고자 하는 서열 2개를 fasta 형식으로 file을 만들면 된다.
 
-추가적으로 '\--max-mm num' 인자를 이용하면 mismatch의 개수를 정할 수 있다.
-
+추가적으로 ''--max-mm'' 인자를 이용하면 mismatch의 개수를 정할 수 있다.
+'test'
 ```bash
 python 3_trimming_ver2.py Mock_sampled.fasta <Primer_set.fasta>
 ```
@@ -102,13 +102,13 @@ python 4_generate_reads_v4.py \
   -c 4 
 ```
 
-'\-n' : 만들 sample 수 
+'-n' : 만들 sample 수 
 
-'\-r' :  fastq 파일의 read 수 
+'-r' :  fastq 파일의 read 수 
 
-'\-l' : 앞에서 또는 뒤에서 몇 bp인지
+'-l' : 앞에서 또는 뒤에서 몇 bp인지
 
-'\-c' : 코어수
+'-c' : 코어수
 
 코드가 정상적으로 작동하면
 
@@ -122,7 +122,7 @@ Sample_1 ~ n_Mock_sampled_ITS1 ~ 12_trimmed_1 ~ 2.fastq
 
 해당 Step은 위 step에서 만들어진 fastq 파일을 merge 하는 step이다. 
 
-우리가 진행하고자 하는 실험은 너무 특이적이기 때문에 merge 되는 reads 들은 merge를 진행시키고, 이 외의 sample 은 linked 해야하기 때문에 이를 위해 만들어진 코드이다.
+우리가 진행하고자 하는 실험은 너무 특이적이기 때문에 merge 되는 reads 들은 merge를 진행시키고, 이 외의 read는 linked 해야하기 때문에 이를 위해 만들어진 코드이다.
 
 코드의 경우 read를 우선적으로 merge 시키고 merge 되지 않은 부분에서는 강제적을 linked 시키기 때문에 분석 자체에 문제가 생길 수 있다.
 
