@@ -9,7 +9,7 @@
 코드는 크게 Genome down ~ merge 까지 5단계로 나눠져 있으며 각각의 Step에서 코드를 어떻게 사용하는 지 확인하며, 원리 ~ 과정에 대해 정리.
 
 ```
-# 1. 가상환경 생성 및 활성화 예시
+# 1. 가상환경 생성 및 활성화
 conda create -n mock_mycobiome python=3.10
 conda activate mock_mycobiome
 
